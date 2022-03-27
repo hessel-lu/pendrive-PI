@@ -1,0 +1,27 @@
+.divA-class{
+    background-color: rgb(68, 47, 107);
+    width: 400px;
+    height: 400px;
+}
+.divB-class{
+    background-color: rgb(255, 123, 0);
+    width: 200px;
+    height: 200px;
+}
+.pC-class{
+    color: black;
+    background-color: rgb(177, 255, 59);
+    font-size: 60px;
+    font-family: fantasy;
+    font-weight: initial;
+}
+.divD-class{
+    width: 150px;
+    height: 30vh;
+    background-color: rgb(235, 98, 98);
+}
+.divE-class{
+    width: 80vh;
+    height: 30vh;
+    background-color: rgb(183, 192, 189);
+}

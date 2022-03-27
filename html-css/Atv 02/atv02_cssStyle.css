@@ -1,0 +1,65 @@
+/* exercício */
+.div1-class{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border: 2px solid green;
+    margin-top: 100px;
+}
+.div2-class{
+    background-color: black;
+    height: 25vw;
+    width: 25vw;
+    border: 10px dashed red;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+/* exercício 2 */
+.div3-class{
+    background-color: rgb(185, 43, 180);
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.div4-class{
+    background-color: rgb(243, 183, 193);
+    height: 250px;
+    width: 250px;
+    border: 20px dotted red;
+}
+.div5-class{
+    background-color: aquamarine;
+    height: 220%;
+    width: 75%;
+}
+
+/* exercício 3 */
+.div6-class{
+    background-color: white;
+    height: 500px;
+    width: 250vw;
+    border: 10px dotted black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div7-class{
+    background-color: yellow;
+    height: 50px;
+    width: 75px;   
+}
+.div8-class{
+    background-color: rgb(185, 78, 6);
+    height: 100px;
+    width: 75px;
+}
+.div9-class{
+    background-color: rgb(25, 117, 25);
+    color: white;
+    font-size: 30px;
+    padding: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
