@@ -4,34 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Movetech | Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <style>
         body {
+            margin: 0;
+            padding: 0;
             display: flex;
         }
 
+        .janela{
+
+        }
+        
+        .header-left{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 25%;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(109, 156, 146)
+        } 
+
         .grafico1{
-            height: 70vh;
-            width:  70vw;
+            height: 40vh;
+            width:  40vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
         }
     </style>
 </head>
 <body>
-
     <div>
-        <canvas id="canvasChartLine" class="grafico1"></canvas>
-    </div>
+      <div class="header-left">
+        <h1>MoveTech</h1>
 
-    <div>
-        <canvas id="canvasChartBar"></canvas>
-    </div>
+        <div>Olá, <span id="spanUsuario">Usuário!</span></div>
 
+      </div>
+      <div>
+          <canvas id="canvasChartLine" class="grafico1"></canvas>
+      </div>
+
+      <div>
+          <canvas id="canvasChartBar" class="grafico1"></canvas>
+      </div>
+    </div>
 </body>
 </html>
 
 <script>
+    // Gráfico de linha
     const labels = [
       '06:00',
       '07:00',
@@ -58,7 +86,7 @@
     const data = {
       labels: labels,
       datasets: [{
-        label: 'Temperaruta (°C)',
+        label: 'Temperatuta (°C)',
         backgroundColor: 'rgba(218,165,32)',
         borderColor: 'rgba(218,165,32)',
         data: [15, 17, 18, 19, 20, 26, 24, 23,20, 20, 19, 18, 16],
@@ -67,7 +95,7 @@
         label: 'Umidade (PH)',
         backgroundColor: 'rgba(32,178,170)',
         borderColor: 'rgba(32,178,170)',
-        // 3.5, 4, 5, 6, 7, 8
+        // exemplo das umidades em ph (3.5, 4, 5, 6, 7, 8)
         data: [8, 8, 5, 5, 3.5, 3.5, 4, 4, 6, 7, 8, 8, 8], 
       }]
     };
@@ -77,6 +105,43 @@
       data: data,
       options: {}
     };
+    // Fim do gráfico de linha
+
+    // Gráfico de Barras
+    const labels1 = [
+      '01/April',
+      '02/April',
+      '03/April',
+      '04/April',
+      '05/April',
+      '06/April',
+      '07/April',
+      
+    ];
+
+    const data1 = {
+      labels: labels1,
+      datasets: [{
+        label: 'Temperatuta Média (°C)',
+        backgroundColor: 'rgba(218,165,32)',
+        borderColor: 'rgba(218,165,32)',
+        data: [15, 17, 18, 19, 20, 26, 24 ],
+        },
+        {
+        label: 'Umidade Média (PH)',
+        backgroundColor: 'rgba(32,178,170)',
+        borderColor: 'rgba(32,178,170)',
+        // 3.5, 4, 5, 6, 7, 8
+        data: [8, 8, 5, 5, 3.5, 3.5, 4], 
+      }]
+    };
+
+    const config1 = {
+      type: 'bar',
+      data: data1,
+      options: {}
+    };
+    // Fim do gráfico de Barras
     
   </script>
 
@@ -85,4 +150,10 @@
       document.getElementById('canvasChartLine'),
       config
     );
+
+    const myChartLine1 = new Chart(
+      document.getElementById('canvasChartBar'),
+      config1
+    );
+
     </script>
