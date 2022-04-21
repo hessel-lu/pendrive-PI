@@ -1,60 +1,69 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!DOCTYPE html>  
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="imagens/logo-agroh.png">
+
     <title>Movetech | Dashboard</title>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .janela{
-
-        }
-        
-        .header-left{
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            width: 25%;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            background-color: rgb(109, 156, 146)
-        } 
-
-        .grafico1{
-            height: 40vh;
-            width:  40vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-        }
-    </style>
+    <link rel="stylesheet" href="style-dash.css">
 </head>
 <body>
-    <div>
-      <div class="header-left">
-        <h1>MoveTech</h1>
 
-        <div>Olá, <span id="spanUsuario">Usuário!</span></div>
+  <div id="global" class="global-class">
+
+      <div id="header-left" class="header-left-class">
+
+        <div class="caixa-user-class">
+          <h2>Olá, username</h2>
+        </div>
+
+        <div class="caixa2-postIt-class"></div>
+
+        <div id="calendario" class="caixa3-calendario-class">
+          <h4>calendário - desejável</h4>
+        </div>
 
       </div>
-      <div>
-          <canvas id="canvasChartLine" class="grafico1"></canvas>
-      </div>
 
-      <div>
-          <canvas id="canvasChartBar" class="grafico1"></canvas>
+      <div id="header-right">
+
+        <div id="nave-header-right" class="nave-header-right-class">
+            <img src="" alt="" style="height: 14vh">
+
+            <!-- <ul>
+                <li>mensagem</li>
+                <li>notificação</li>
+                <li>avatar</li>
+                <li>combo box</li>
+            </ul> -->
+        </div>
+
+        <div id="body-header-right" class="body-header-right-class">
+
+          <div id="body2-header-right" class="body2-header-right-class">
+
+            <div id="body3-header-right" class="body3-header-right-class">
+              <div>
+                  <!-- <canvas id="canvasChartLine" class="tamanhoGraficos-class"></canvas> -->
+              </div>
+
+              <div>
+                  <!-- <canvas id="canvasChartBar"  class="tamanhoGraficos-class"></canvas> -->
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+
       </div>
-    </div>
+  </div>   
 </body>
 </html>
 
