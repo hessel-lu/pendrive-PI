@@ -91,16 +91,22 @@ body {
     height: 80vh;
     width: 75vw;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     background-color: #E9F6DC;
     border: 2px solid red;
 }
 
 .body3-header-right-class {
-    height: 80vh;
-    width: 50vw;
+    height: 40vh;
+    width: 75vw;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 2px solid red;
+    justify-content: space-between;
+    border: 2px solid rgb(0, 247, 255);
+}
+
+.body3-1-header-right-class {
+    height: 40vh;
+    width: 75vw;
+    display: flex;
+    border: 2px solid rgb(140, 0, 255);
 }
