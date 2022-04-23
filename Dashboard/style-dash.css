@@ -19,11 +19,19 @@ body {
 }
 
 .tamanhoGraficos-class {
-    height: 10vh;
-    width:  10vw;
+    height: 30vh;
+    width:  30vw;
     display: flex;
     background-color: #fff;
     /* border: 2px solid red; */
+}
+
+.tamanhoGraficosPolares-class {
+    position: relative;
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    background-color: #fff;
 }
 
 .global-class {
@@ -38,7 +46,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .caixa-user-class {
@@ -53,7 +61,7 @@ body {
     border-radius: 5px;
     color: #ffff    ;
     background-color: #413620;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .caixa2-postIt-class {
@@ -65,7 +73,7 @@ body {
     /* align-items: center; */
     /* justify-content:center; */
     background-color: #fdf8b6;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .caixa3-calendario-class{
@@ -76,13 +84,13 @@ body {
     align-items: center;
     justify-content:center;
     background-color: #fff;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .header-right-class {
     height: 100vh;
     width: 80vw;
     display: flex;
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
 }
 
 .nave-header-right-class {
@@ -93,14 +101,14 @@ body {
     align-items: center;
     background-color: #F8F8F8;
     /* justify-content: space-between; */
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
 }
 
 .nave-header-right-class img {
     height: 82px;
     display: flex;
     margin-left: 15px;
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
 
 }
 
@@ -125,7 +133,7 @@ body {
     justify-content: center;
     align-items: flex-end;
     background-color: #F8F8F8;
-    border: 2px solid grey;
+    /* border: 2px solid grey; */
 }
 
 .body2-header-right-class {
@@ -134,7 +142,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #E9F6DC;
-    border: 2px solid goldenrod;
+    /* border: 2px solid goldenrod; */
 }
 
 .body3-header-right-class {
@@ -142,14 +150,17 @@ body {
     width: 75vw;
     display: flex;
     justify-content: space-between;
-    border: 2px solid rgb(0, 247, 255);
+    /* border: 2px solid rgb(0, 247, 255); */
 }
 
 .body3-1-header-right-class {
     height: 40vh;
     width: 75vw;
     display: flex;
-    border: 2px solid rgb(140, 0, 255);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid rgb(140, 0, 255); */
 }
 
 .body4-temperatura-umidade-class {
@@ -159,14 +170,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .body5-chartsPolares-class {
-    height: 40vh;
-    width: 30vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;    
+    /* border: 2px solid black;     */
+}
+
+.body5-chartsPolares-class button {
+    height: 5vh;
+    width: 7vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
