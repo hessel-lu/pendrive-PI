@@ -11,38 +11,38 @@ Link do meu miro: https://miro.com/app/board/o9J_l-fpPjk=/
 Arrasa!
 */
 
-
 body { 
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.tamanhoGraficos-class {
+.tamanhoGraficosLineBar-class {
     height: 30vh;
     width:  30vw;
     display: flex;
     background-color: #fff;
-    /* border: 2px solid red; */
+    /* border: 2px solid blue; */
 }
 
 .tamanhoGraficosPolares-class {
     height: 30vh;
     width: 30vw;
     display: flex;
-
+    /* border: 2px solid blue; */
 }
 
 .global-class {
     display: flex;
     width: 100vw;
+    background-color: #F8F8F8;
 }
 
 .header-left-class {
     height: 100vh;
     width: 20vw;
-    background-color: #9ee37d;
     display: flex;
+    background-color: #9ee37d;
     flex-direction: column;
     align-items: center;
     /* border: 2px solid red; */
@@ -67,15 +67,13 @@ body {
     height: 22vh;
     width: 89%;
     display: flex;
+    margin-bottom: 5vh;
     border-bottom: 2px solid #576e4c;
-    margin-bottom: 5vh ;
-    /* align-items: center; */
-    /* justify-content:center; */
     background-color: #fdf8b6;
     /* border: 2px solid red; */
 }
 
-.caixa3-calendario-class{
+.caixa3-calendario-class {
     height: 35vh;
     width: 90%;
     display: flex;
@@ -85,11 +83,10 @@ body {
     background-color: #fff;
     /* border: 2px solid red; */
 }
+
 .header-right-class {
-    height: 100vh;
-    width: 80vw;
-    display: flex;
-    /* border: 2px solid greenyellow; */
+    background-color: #F8F8F8;
+    /* border-top: 2px solid orangered; */
 }
 
 .nave-header-right-class {
@@ -98,8 +95,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F8F8F8;
-    /* justify-content: space-between; */
     /* border: 2px solid greenyellow; */
 }
 
@@ -108,40 +103,31 @@ body {
     display: flex;
     margin-left: 15px;
     /* border: 2px solid greenyellow; */
-
 }
 
 .nave-header-right-class ul img {
     height: 35px;
     display: flex;
+    /* border: 2px solid greenyellow; */
 }
 
 .nave-header-right-class ul {
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
-    width: 50%;
     margin-right: 40px;
+    /* border: 2px solid greenyellow; */
 }
 
 .body-header-right-class {
-    height: 85vh;
+    height: 80vh;
     width: 80vw;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: flex-end;
-    background-color: #F8F8F8;
-    border: 2px solid grey;
-}
-
-.body-header-right-class button{
-    height: 05vh;
-    width: 10vw;
-    display: flex;
-    flex-direction: row;
-
+    /* border: 2px solid grey; */
 }
 
 .body2-header-right-class {
@@ -166,7 +152,7 @@ body {
     width: 75vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     /* border: 2px solid rgb(140, 0, 255); */
 }
@@ -178,14 +164,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid red; */
+    /* border: 2px solid brown; */
 }
 
 .body5-chartsPolares-class {
     height: 40vh;
     width: 30vw;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     /* border: 2px solid black;     */
@@ -201,10 +186,46 @@ body {
     /* border: 2px solid black;     */
 }
 
-.body5-chartsPolares-class button {
+.tabs-class {
+    height:5vh;
+    width:75vw;
+    margin-left: 2.5vw;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    /* border: 2px solid pink; */
+}
+
+.tabs-class button {
+    color: #56bd56;
+    background-color: #F8F8F8;
+    border-top: 2px solid #E9F6DC;
+    border-left: 2px solid #E9F6DC;
+    border-right: 2px solid #E9F6DC;
+    border-bottom: 1px solid #E9F6DC ;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
     height: 5vh;
     width: 7vw;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+    /* border: 2px solid pink; */
+}
+
+.tabs-class button:hover {
+    background-color: #E9F6DC;
+    /* border: 2px solid pink; */
+}
+
+/*
+.tab button.active {
+    background-color: #E9F6DC;
+} 
+*/
+
+.teste-class {
+    display: none;
+}
+
+.teste2-class {
+    display: none;
 }

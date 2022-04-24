@@ -10,44 +10,46 @@
 
     <title>AgrohCompany | Dashboard</title>
 
+    <!-- 
+    já esse link é dos gráficos de linhas e barras que temos,
+    não sei se os polares vão precisar de link, caso sim, ele entra aqui
+    em uma nova tag <script> para ele
+    -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- 
-      já esse link é dos gráficos de linhas e barras que temos,
-      não sei se os polares vão precisar de link, caso sim, ele entra aqui
-      em uma nova tag <link> para ele
-    -->
     <link rel="stylesheet" href="style-dash.css">
 </head>
 <body>
-    <!-- essa tag div global é toda a nossa naveção da página, ela foi difivida em partes -->
+  <!-- essa tag div global é toda a nossa naveção da página, ela foi difivida em partes -->
   <div id="global" class="global-class">
 
     <!-- uma das partes é a header-left "cabeçalho esquerdo da página" -->
       <div id="header-left" class="header-left-class">
 
         <div class="caixa-user-class">
-          <h2>Olá, <span id="username">username</span></h2>
+            <h2>Olá, <span id="username">username</span></h2>
         </div>
 
-        <div class="caixa2-postIt-class"> <img src="imagens/paperclip.png" style="height: 32px; display:flex; justify-content: flex-start"></div>
+        <div class="caixa2-postIt-class"> 
+            <img src="imagens/paperclip.png" style="height: 32px; display:flex; justify-content: flex-start">
+        </div>
         
         <div id="calendario" class="caixa3-calendario-class">
           <h4>calendário - desejável</h4>
         </div>
 
       </div>
-    <!-- fim do header-left -->
+    <!-- fim do header-left, tudo que faz parte dela, no css estão com as bordas em RED para auxiliar na construção -->
     
     <!-- 
       outra parte é header-right toda parte direita da nossa página, temos uma mini nave, onde tem o logo, botões
       e logo abaixo os gráficos
     -->
-      <div id="header-right">
+      <div id="header-right" class="header-right-class">
 
+        <!-- inicio da nave -->
         <div id="nave-header-right" class="nave-header-right-class">
             <img src="imagens/logo-agroh&nome.jpeg" alt="logo-agrohCompany">
-
             <ul>
                 <li><a href="#"><img src="imagens/envelope.png" alt="imagem-envelope"></a></li>
                 <li><a href="#"><img src="imagens/notificacao.png" alt="imagem-notificação"></a></li>
@@ -55,62 +57,87 @@
                 <li><a href="#"><img src="imagens/sair.png" alt="imagem-saida"></a></li>
             </ul>
         </div>
+        <!-- fim da nave, tudo que faz parte dela, no css estão com as bordas em greenyellow -->
 
+        <!-- inicio dos botões -->
+        <div id="tabs" class="tabs-class">
+            <button onclick="buttonDashboard()">Dashboard</button>
+            <button onclick="buttonGrafico1()">Gráfico 1</button>
+            <button onclick="buttonGrafico2()">Gráfico 2</button>
+        </div>
+        <!-- fim dos botões, tudo que faz parte deles, no css estão com as bordas pink -->
+
+        <!-- inicio do body onde ficam os gráficos, no css ele está com as bordas em grey -->
         <div id="body-header-right" class="body-header-right-class">
 
-          <div id="body2-header-right" class="body2-header-right-class">
+          <!--
+            inicio do body dois, ele é responsável em guardar as duas divs onde estão os gráficos,
+            no css sua bordar é goldenrod
+          -->
+          <div id="body2-header-right" class="body2-header-right-class"> 
 
-            <div id="body3-1-header-right" class="body3-header-right-class">
+          <div id="noneEblockDash" style="display: block;"> <!-- none e block em teste-->
 
-              <!-- essa div com canvas é o nosso primeiro gráfico polar "poder ser de temeperatura ou humidade" -->
+            <div id="body3-header-right" class="body3-header-right-class">
 
-              <div class="body5-chartsPolares-class">
+                <div class="body5-chartsPolares-class">
 
-                <div class="body5-1-chartsPolares-class">
-                    <canvas id="canvasChartPolarTempe" class="tamanhoGraficosPolares-class"></canvas>
+                    <div class="body5-1-chartsPolares-class">
+                        <canvas id="canvasChartPolarTempe" class="tamanhoGraficosPolares-class"></canvas>
+                    </div>
+
                 </div>
 
-              </div>
-
-              <!-- aqui é a parte do centro dos dois gráficos polares, onde tem a temp e humi atual -->
-              <div class="body4-temperatura-umidade-class">
-                <p>Temperatura atual</p>
-                <div style="height: 10vh; width: 10vh; background-color: orange; display:flex; justify-content: center; align-items: center;">0 °c</div>
-                <p>Umidade atual</p>
-                <div style="height: 10vh; width: 10vh; background-color: darkcyan; display:flex; justify-content: center; align-items: center;">0 pH</div>
-              </div>
-
-              <div class="body5-chartsPolares-class">
-                <!-- essa outra div canvas é o nosso segundo gráfico polar -->
-                <div class="body5-1-chartsPolares-class">
-                    <canvas id="canvasChartPorlarHumi" class="tamanhoGraficosPolares-class"></canvas>
+                <!-- aqui é a parte do centro dos dois gráficos polares, onde tem a temp e humi atual -->
+                <div class="body4-temperatura-umidade-class">
+                    <p>Temperatura atual</p>
+                    <div style="height: 10vh; width: 10vh; background-color: orange; display:flex; justify-content: center; align-items: center;">0 °c</div>
+                    <p>Umidade atual</p>
+                    <div style="height: 10vh; width: 10vh; background-color: darkcyan; display:flex; justify-content: center; align-items: center;">0 pH</div>
                 </div>
 
-              </div>
+                <div class="body5-chartsPolares-class">
+
+                    <div class="body5-1-chartsPolares-class">
+                        <canvas id="canvasChartPorlarHumi" class="tamanhoGraficosPolares-class"></canvas>
+                    </div>
+
+                </div>
 
             </div>
 
-            <!-- 
-              essa div abaixo é reponsável em guardar os nossos dois outros gráficos bar e line
-              deixei esses comentados, pq estavam dando um problema de tamanho. para descomentar é
-              só user o (Ctrl + : ), que vai ser sucesso!
-            -->
-            <div id="body3-header-right" class="body3-1-header-right-class">
-              <div>
-                  <canvas id="canvasChartLine" class="tamanhoGraficos-class"></canvas>
-              </div>
+            <div id="body3-1-header-right" class="body3-1-header-right-class">
 
-              <div>
-                  <canvas id="canvasChartBar"  class="tamanhoGraficos-class"></canvas>
-              </div>
+                <div>
+                    <canvas id="canvasChartLine" class="tamanhoGraficosLineBar-class"></canvas>
+                </div>
+
+                <div>
+                    <canvas id="canvasChartBar"  class="tamanhoGraficosLineBar-class"></canvas>
+                </div>
+
             </div>
 
           </div>
-          <!-- fim da div que começa na linha 61 -->
+          <!-- fim da div none&blockDash-->
+
+          <div id="teste" class="teste-class">
+              testando
+          </div>
+
+          <div id="teste2" class="teste2-class">
+              testando 2
+          </div>
+
         </div>
-        <!-- fim da div que começa na linha 59 -->
-      </div> 
+        <!-- fim do body 2 -->
+
+        </div>
+        <!-- fim do body com as bordas em grey -->
+
+      </div>
       <!-- fim da header-right -->
+
   </div>
   <!-- fim da tag div global -->
 </body>
@@ -287,7 +314,25 @@
       config3
     )
 
-    //dentro dessa scrip, poder vir a const dos novos gráficos
+    </script>
 
-    // arrasa Eli ;)
+    <script>
+        function buttonDashboard() {
+            noneEblockDash.style.display = 'block';
+            teste.style.display = 'none';
+            teste2.style.display = 'none';
+        }
+
+
+        function buttonGrafico1() {
+            noneEblockDash.style.display = 'none';
+            teste.style.display = 'block';
+            teste2.style.display = 'none';
+        }
+
+        function buttonGrafico2() {
+            noneEblockDash.style.display = 'none';
+            teste.style.display = 'none';
+            teste2.style.display = 'block';
+        }
     </script>
