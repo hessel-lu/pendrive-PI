@@ -27,11 +27,10 @@ body {
 }
 
 .tamanhoGraficosPolares-class {
-    position: relative;
     height: 30vh;
     width: 30vw;
     display: flex;
-    background-color: #fff;
+
 }
 
 .global-class {
@@ -130,10 +129,19 @@ body {
     height: 85vh;
     width: 80vw;
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: flex-end;
     background-color: #F8F8F8;
-    /* border: 2px solid grey; */
+    border: 2px solid grey;
+}
+
+.body-header-right-class button{
+    height: 05vh;
+    width: 10vw;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .body2-header-right-class {
@@ -174,8 +182,20 @@ body {
 }
 
 .body5-chartsPolares-class {
+    height: 40vh;
+    width: 30vw;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black;     */
+}
+
+.body5-1-chartsPolares-class {
+    height: 245px;
+    width: 245px;
+    display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     /* border: 2px solid black;     */

@@ -27,7 +27,7 @@
       <div id="header-left" class="header-left-class">
 
         <div class="caixa-user-class">
-          <h2>Olá, username</h2>
+          <h2>Olá, <span id="username">username</span></h2>
         </div>
 
         <div class="caixa2-postIt-class"> <img src="imagens/paperclip.png" style="height: 32px; display:flex; justify-content: flex-start"></div>
@@ -63,11 +63,13 @@
             <div id="body3-1-header-right" class="body3-header-right-class">
 
               <!-- essa div com canvas é o nosso primeiro gráfico polar "poder ser de temeperatura ou humidade" -->
-              <div class="body5-chartsPolares-class">
-                <canvas id="canvasChartPolarTempe" class="tamanhoGraficosPolares-class"></canvas>
 
-                <button>cana</button>
-                <button>soja</button>
+              <div class="body5-chartsPolares-class">
+
+                <div class="body5-1-chartsPolares-class">
+                    <canvas id="canvasChartPolarTempe" class="tamanhoGraficosPolares-class"></canvas>
+                </div>
+
               </div>
 
               <!-- aqui é a parte do centro dos dois gráficos polares, onde tem a temp e humi atual -->
@@ -78,12 +80,12 @@
                 <div style="height: 10vh; width: 10vh; background-color: darkcyan; display:flex; justify-content: center; align-items: center;">0 pH</div>
               </div>
 
-              <!-- essa outra div canvas é o nosso segundo gráfico polar -->
               <div class="body5-chartsPolares-class">
-                <canvas id="canvasChartPorlarHumi" class="tamanhoGraficosPolares-class"></canvas>
+                <!-- essa outra div canvas é o nosso segundo gráfico polar -->
+                <div class="body5-1-chartsPolares-class">
+                    <canvas id="canvasChartPorlarHumi" class="tamanhoGraficosPolares-class"></canvas>
+                </div>
 
-                <button>cana</button>
-                <button>soja</button>
               </div>
 
             </div>
@@ -187,7 +189,6 @@
         label: 'Umidade Média (PH)',
         backgroundColor: 'rgba(32,178,170)',
         borderColor: 'rgba(32,178,170)',
-        // 3.5, 4, 5, 6, 7, 8
         data: [8, 8, 5, 5, 3.5, 3.5, 4], 
       }]
     };
@@ -212,14 +213,14 @@
         ],
         datasets: [{
             label: 'Temperatura dos hectares',
-            data: [22, 18, 20, 19, 21, 17],
+            data: [15, 17, 20, 26, 23, 20],
             backgroundColor: [
-                'rgb(218,165,32)',
-                'rgb(205,133,63)',
+                'rgb(160,82,45)',
+                'rgb(244,164,96)',
+                'rgb(255,222,173)',
+                'rgb(160,82,45)',
                 'rgb(210,105,30)',
-                'rgb(222,184,135)',
-                'rgb(139,69,19)',
-                'rgb(245,222,179)',
+                'rgb(255,222,173)',
             ]
         }] 
     };
@@ -233,6 +234,35 @@
 
 
     // inicio do gráfico polar 2
+    const data3 = {
+        labels: [
+            'A',
+            'B',
+            'C',
+            'D',
+            'E',
+            'F'
+        ],
+        datasets: [{
+            label: 'Humidade dos hectares',
+            data: [8, 8, 3.5, 3.5, 4, 6],
+            backgroundColor: [
+                'rgb(32,178,170)',
+                'rgb(32,178,170)',
+                'rgb(0,128,128)',
+                'rgb(0,128,128)',
+                'rgb(64,224,208)',
+                'rgb(72,209,204)',
+            ]
+
+        }]
+    };
+
+    const config3 = {
+        type: 'polarArea',
+        data: data3,
+        options: {}
+    }
     // fim do gráfico polar 2
   </script>
 
@@ -242,7 +272,7 @@
       config
     );
 
-    const myChartLine1 = new Chart(
+    const myChartBar = new Chart(
       document.getElementById('canvasChartBar'),
       config1
     );
@@ -251,6 +281,11 @@
       document.getElementById('canvasChartPolarTempe'),
       config2
     );
+
+    const myChartPolar1 = new Chart(
+      document.getElementById('canvasChartPorlarHumi'),
+      config3
+    )
 
     //dentro dessa scrip, poder vir a const dos novos gráficos
 
