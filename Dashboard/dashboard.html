@@ -35,7 +35,7 @@
         </div>
         
         <div id="calendario" class="caixa3-calendario-class">
-          <!-- <h4>calendário - desejável</h4> -->
+            <img src="Imagens/Legenda.png" alt="" style="display: flex; height: 35vh; width: 35vw">
         </div>
 
       </div>
@@ -95,7 +95,7 @@
                     <p>Temperatura atual</p>
                     <div style="height: 10vh; width: 10vh; background-color: orange; display:flex; justify-content: center; align-items: center;">0 °c</div>
                     <p>Umidade atual</p>
-                    <div style="height: 10vh; width: 10vh; background-color: darkcyan; display:flex; justify-content: center; align-items: center;">0 pH</div>
+                    <div style="height: 10vh; width: 10vh; background-color: darkcyan; display:flex; justify-content: center; align-items: center;">0 %</div>
                 </div>
 
                 <div class="body5-chartsPolares-class">
@@ -185,11 +185,10 @@
         data: [15, 17, 18, 19, 20, 26, 24, 23,20, 20, 19, 18, 16],
         },
         {
-        label: 'Umidade (PH)',
+        label: 'Umidade (%)',
         backgroundColor: 'rgba(32,178,170)',
         borderColor: 'rgba(32,178,170)',
-        // exemplo das umidades em ph (3.5, 4, 5, 6, 7, 8)
-        data: [8, 8, 5, 5, 3.5, 3.5, 4, 4, 6, 7, 8, 8, 8], 
+        data: [40, 52, 47, 52, 40, 47, 50, 44, 48, 50, 49, 50, 52], 
       }]
     };
   
@@ -233,11 +232,10 @@
         data: [15, 17, 18, 19, 20, 26, 24, 23,20, 20, 19, 18, 16],
         },
         {
-        label: 'Umidade (PH)',
+        label: 'Umidade (%)',
         backgroundColor: 'rgba(32,178,170)',
         borderColor: 'rgba(32,178,170)',
-        // exemplo das umidades em ph (3.5, 4, 5, 6, 7, 8)
-        data: [8, 8, 5, 5, 3.5, 3.5, 4, 4, 6, 7, 8, 8, 8], 
+        data: [40, 52, 47, 52, 40, 47, 50, 44, 48, 50, 49, 50, 52], 
       }]
     };
   
@@ -269,7 +267,7 @@
         data: [15, 17, 18, 19, 20, 26, 24 ],
         },
         {
-        label: 'Umidade Média (PH)',
+        label: 'Umidade Média (%)',
         backgroundColor: 'rgba(32,178,170)',
         borderColor: 'rgba(32,178,170)',
         data: [8, 8, 5, 5, 3.5, 3.5, 4], 
@@ -304,7 +302,7 @@
         data: [15, 17, 18, 19, 20, 26, 24 ],
         },
         {
-        label: 'Umidade Média (PH)',
+        label: 'Umidade Média (%)',
         backgroundColor: 'rgba(32,178,170)',
         borderColor: 'rgba(32,178,170)',
         data: [8, 8, 5, 5, 3.5, 3.5, 4], 
@@ -330,14 +328,14 @@
         ],
         datasets: [{
             label: 'Temperatura dos hectares',
-            data: [15, 17, 20, 26, 23, 20],
+            data: [25, 35, 19, 25, 30, 15],
             backgroundColor: [
-                'rgb(160,82,45)',
-                'rgb(244,164,96)',
-                'rgb(255,222,173)',
-                'rgb(160,82,45)',
-                'rgb(210,105,30)',
-                'rgb(255,222,173)',
+                'rgb(254,151,46)',
+                'rgb(213,106,0)',
+                'rgba(254,198,139)',
+                'rgb(254,151,46)',
+                'rgba(250,125,0)',
+                'rgba(254,198,139)',
             ]
         }] 
     };
@@ -362,14 +360,14 @@
         ],
         datasets: [{
             label: 'Umidade dos hectares',
-            data: [8, 8, 3.5, 3.5, 4, 6],
+            data: [50, 100, 25, 50, 25, 50],
             backgroundColor: [
-                'rgb(32,178,170)',
-                'rgb(32,178,170)',
-                'rgb(0,128,128)',
-                'rgb(0,128,128)',
-                'rgb(64,224,208)',
-                'rgb(72,209,204)',
+                'rgb(120,179,223)',
+                'rgb(0,56,131)',
+                'rgba(172,206,231)',
+                'rgb(120,179,223)',
+                'rgba(172,206,231)',
+                'rgb(120,179,223)',
             ]
 
         }]
