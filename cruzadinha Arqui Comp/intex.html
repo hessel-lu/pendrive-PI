@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavra Cruzada</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="funcoes.js"></script>
+    
+</head>
+<body>
+    <!-- div reponsável por guardar todo grupo de divs -->
+    <div class="global-container">
+
+        <div class="left-container"></div>
+
+        <div class="center-container">
+
+            <div class="cruzadinha">
+                <!-- linha 1 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">  
+                    <input class="divInput-cruzadinha" type="text">    
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <button onclick="buttonDois()"class="button-cruzadinha">2</button> <!--numero 2-->  
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">  
+                    <input class="divInput-cruzadinha" type="text">  
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 2 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <button onclick="buttonUm()" class="button-cruzadinha">1</button> <!--numero 1-->
+                    <input class="input-cruzadinha" type="text">     
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 3 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 4 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">  
+                    <button onclick="buttonDez()" class="button-cruzadinha">10</button> <!--numero 10--> 
+                    <input class="input-cruzadinha" type="text">     
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 5 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">  
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 6 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 7 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">  
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <button onclick="buttonQuinze()" class="button-cruzadinha">15</button>  <!--numero 15-->  
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 8 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">  
+                    <button onclick="buttonSete()" class="button-cruzadinha">7</button>  <!--numero 7-->
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 9 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 10 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">    
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 11 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">    
+                    <button onclick="buttonOnze()" class="button-cruzadinha">11</button> <!--numero 11-->
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <button onclick="buttonQuatro()" class="button-cruzadinha">4</button><!--numero 4-->
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 12 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <button onclick="buttonTres()" class="button-cruzadinha">3</button> <!--numero 3--> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 13 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 14 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">  
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 15 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <button onclick="buttonSeis()" class="button-cruzadinha">6</button> <!-- numero 6--> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">    
+                    <button onclick="buttonTreze()" class="button-cruzadinha">13</button> <!-- numero 13-->
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">    
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 16 -->
+                <div class="linhas">
+                    <button onclick="buttonOito()" class="button-cruzadinha">8</button> <!-- numero 8-->  
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 17 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 18 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">    
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <button onclick="buttonCinco()" class="button-cruzadinha">5</button> <!--numero 5-->
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 19 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 20 -->
+                <div class="linhas">
+                    <button onclick="buttonNove()" class="button-cruzadinha">9</button> <!--numero 9-->
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">  
+                    <button onclick="buttonDezesseis()" class="button-cruzadinha">16</button> <!--numero 16-->
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text">  
+                </div>
+
+                <!-- linha 21 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">     
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 22 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 23 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">   
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 24 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">  
+                    <button onclick="buttonQuatorze()" class="button-cruzadinha">14</button> <!--numero 14-->
+                    <input class="input-cruzadinha" type="text">  
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 25 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">    
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">     
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+
+                <!-- linha 26 -->
+                <div class="linhas">
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text">  
+                    <button onclick="buttonDoze()" class="button-cruzadinha">12</button> <!--numero 12--> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">    
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text"> 
+                    <input class="input-cruzadinha" type="text">   
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                    <input class="divInput-cruzadinha" type="text"> 
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="right-container"></div>
+
+
+    </div>
+</body>
+</html>
