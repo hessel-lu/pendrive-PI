@@ -81,7 +81,8 @@ body {
     background-color: transparent;
     border: 1px solid transparent;
     /* border: 1px solid green; */
-    border-radius: 3px
+    border-radius: 3px;
+    cursor: not-allowed;
 }
 
 .divInputColor-cruzadinha {
@@ -102,6 +103,8 @@ body {
     background-color: #fff;
     border: 1px solid #969696;
     border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
@@ -130,7 +133,7 @@ body {
     font-family: sans-serif;
     color: #58D5CF;
     background-color: #fff;
-    cursor: help;
+    cursor: not-allowed;
 }
 
 .linhas {
